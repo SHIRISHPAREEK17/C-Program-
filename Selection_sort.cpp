@@ -5,7 +5,7 @@
 int arr[MAX];
 int n=0;
 
-void CreateArray(){
+void createArray(){
 	printf("Enter the Size of the array\n");
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
@@ -33,7 +33,7 @@ void insertion_sort(int arr[],int n){
 	}
 	printf("Array sorted successfully\n");	
 }
-void Bubble_sort(int arr[],int n){
+void bubble_sort(int arr[],int n){
 	printf("Bubble Sort\n");
 	int temp,i,j;
 	for(i=0;i<n;i++){ 
@@ -82,13 +82,13 @@ int main(){
         scanf("%d",&choice);
         switch(choice){
         	case 1 :
-        		CreateArray();
+        		createArray();
         		break;
         	case 2:
         		insertion_sort(arr,n);
         		break;
         	case 3:
-        		Bubble_sort(arr,n);
+        		bubble_sort(arr,n);
         		break;
         	case 4:
         		selection_sort(arr,n);
@@ -99,3 +99,4 @@ int main(){
 	}
 getch();
 }
+
